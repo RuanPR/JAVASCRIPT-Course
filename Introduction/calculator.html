@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles/calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+    <title>
+      Calculator
+    </title>
+    <script src="Script/calculator.js" async></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="result">
+        134
+      </div>
+      <section class="numbers-box">
+        <button class="number-button" onclick="calculation += '1'; console.log(calculation)">1</button>
+        <button class="number-button" onclick="calculation += '2'; console.log(calculation)">2</button>
+        <button class="number-button" onclick="calculation += '3'; console.log(calculation)">3</button>
+        <button class="operator-button" onclick="calculation += ' + '; console.log(calculation)">+</button>
+        <button class="number-button" onclick="calculation += '4'; console.log(calculation)">4</button>
+        <button class="number-button" onclick="calculation += '5'; console.log(calculation)">5</button>
+        <button class="number-button" onclick="calculation += '6'; console.log(calculation)">6</button>
+        <button class="operator-button" onclick="calculation += ' - '; console.log(calculation)">-</button>
+        <button class="number-button" onclick="calculation += '7'; console.log(calculation)">7</button>
+        <button class="number-button" onclick="calculation += '8'; console.log(calculation)">8</button>
+        <button class="number-button" onclick="calculation += '9'; console.log(calculation)">9</button>
+        <button class="operator-button" onclick="calculation += ' x '; console.log(calculation)">x</button>
+        <button class="number-button" onclick="calculation += '0'; console.log(calculation)">0</button>
+        <button class="fraction-button" onclick="calculation += '.'; console.log(calculation)">.</button>
+        <button class="equal-button" onclick="eval(calculation) = calculation; console.log(calculation)">=</button>
+        <button class="operator-button" onclick="calculation += ' / '; console.log(calculation)">/</button>
+        <button class="clear-button" onclick="calculation = ''; console.log(calculation)">Clear</button>
+      </section>
+    </main>
+  </body>
+</html>
