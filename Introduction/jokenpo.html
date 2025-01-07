@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles/jokenpo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>
+      Jokenpo
+    </title>
+
+    <script src="Script/jokenpo.js" async></script>
+  </head>
+
+  <body>
+    <main>
+      <p class="title">
+        Rock Paper Scissors
+      </p>
+      <button class="rock-button" onclick="
+      choice('rock', 'Tie.', 'You lose.', 'You won.');
+      ">
+        <img src="imgs/rock-emoji.png">
+      </button>
+      <button class="paper-button" onclick="
+      choice('paper', 'You won.', 'Tie.', 'You lose.')
+      ">
+        <img src="imgs/paper-emoji.png">
+      </button>
+      <button class="scissors-button" onclick="
+      choice('scissors', 'You lose.', 'You won.', 'Tie.');
+      ">
+        <img src="imgs/scissors-emoji.png">
+      </button>
+      <p class="score">
+        
+      </p>
+      <button class="reset-button">
+        Reset Score
+      </button>
+    </main>
+  </body>
+</html>

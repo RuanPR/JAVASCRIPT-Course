@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(27, 27, 27);
+  font-family: Roboto, Arial;
+}
+
+button {
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.rock-button, .paper-button, .scissors-button {
+  background-color: transparent;
+  border: 3px solid white; 
+  padding: 30px 32px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.reset-button {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.score {
+  color: white;
+  font-size: 18px;
+  margin-top: 45px;
+}

@@ -1,1 +1,1 @@
-let calculation = '';
+let calculation = 0;
