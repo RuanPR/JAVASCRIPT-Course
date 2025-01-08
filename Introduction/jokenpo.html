@@ -18,24 +18,29 @@
         Rock Paper Scissors
       </p>
       <button class="rock-button" onclick="
-      choice('rock', 'Tie.', 'You lose.', 'You won.');
+      choice('rock');
       ">
         <img src="imgs/rock-emoji.png">
       </button>
       <button class="paper-button" onclick="
-      choice('paper', 'You won.', 'Tie.', 'You lose.')
+      choice('paper')
       ">
         <img src="imgs/paper-emoji.png">
       </button>
       <button class="scissors-button" onclick="
-      choice('scissors', 'You lose.', 'You won.', 'Tie.');
+      choice('scissors');
       ">
         <img src="imgs/scissors-emoji.png">
       </button>
       <p class="score">
         
       </p>
-      <button class="reset-button">
+      <button class="reset-button" onclick="
+      score.tie = 0;
+      score.win = 0;
+      score.lose = 0;
+      localStorage.removeItem('score');
+      ">
         Reset Score
       </button>
     </main>

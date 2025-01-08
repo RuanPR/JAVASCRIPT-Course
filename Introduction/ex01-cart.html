@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles/ex1.css">
+
+    <title>
+      Ex 1 - Cart Shop
+    </title>
+
+    <script src="Script/ex1.js" async></script>
+  </head>
+
+  <body>
+    <main>
+      <p class="title">
+        Cart Quantity
+      </p>
+      <button onclick="
+      console.log(`Cart Quantity: ${cartQuantity}`);
+      ">
+        Show Quantity
+      </button>
+      <button onclick="
+      cartFull(1);
+      ">
+        Add to Cart
+      </button>
+      <button onclick="
+      cartFull(2);
+      ">
+        +2
+      </button>
+      <button onclick="
+      cartFull(3);
+      ">
+        +3
+      </button>
+      <button onclick="
+      cartEmpty(1);
+      ">
+        Remove from Cart
+      </button>
+      <button onclick="
+      cartEmpty(2);
+      ">
+        -2
+      </button>
+      <button onclick="
+      cartEmpty(3);;
+      ">
+        -3
+      </button>
+      <button onclick="
+      cartQuantity = 0; console.log(`Cart was Reset.\nCart Quantity: ${cartQuantity}`);
+      ">
+        Reset Cart
+      </button>
+      
+    </main>
+  </body>
+</html>
