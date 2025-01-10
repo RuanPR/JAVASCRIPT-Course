@@ -1,6 +1,7 @@
 body {
   background-color: rgb(27, 27, 27);
   font-family: Roboto, Arial;
+  color: white;
 }
 
 button {
@@ -27,7 +28,6 @@ button img {
 
 .title {
   font-size: 30px;
-  color: white;
   font-weight: bold;
 }
 
@@ -40,4 +40,15 @@ button img {
   color: white;
   font-size: 18px;
   margin-top: 45px;
+}
+
+.results-title {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.results-content img {
+  width: 50px;
+  height: 50px;
 }

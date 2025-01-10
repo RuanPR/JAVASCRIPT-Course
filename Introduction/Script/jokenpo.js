@@ -14,25 +14,26 @@ function randomChoice() {
   return compMove;  
 }
 
-const score = JSON.parse(localStorage.getItem('score')) || {
-  win: 0,
-  lose: 0,
-  ties: 0
-};
-
 /*
 if (score === null) {
   score = {
     win: 0,
     lose: 0,
-    ties: 0
+    tie: 0
   };
 }
 */
 
-let result = '';
+let score = JSON.parse(localStorage.getItem('score')) || {
+  win: 0,
+  lose: 0,
+  tie: 0
+};
+
+
 
 function choice(playerMove) {
+  let result = '';
   const compMove = randomChoice();
   
   if (playerMove === 'rock') {
@@ -70,9 +71,25 @@ function choice(playerMove) {
     }
   }
 
-  localStorage.setItem('score', JSON.stringify(score));
+  updateScore();
 
-  alert(`You picked ${playerMove}. Computer picked ${compMove}. ${result} 
-Wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`);
+  function resultChange() {
+    const resultTitle = document.querySelector('.results-title');
+    const resultText = document.querySelector('.results-content');
+    resultTitle.innerHTML = `${result}`;
+    resultText
+      .innerHTML = `You <img src="imgs/${playerMove}-emoji.png"> <img src="imgs/${compMove}-emoji.png"> Computer`;
+  }
+
+  resultChange();
+  
+  localStorage.setItem('score', JSON.stringify(score));
+  //alert(`You picked ${playerMove}. Computer picked ${compMove}. ${result} 
+//Wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`);
+}
+
+function updateScore() {
+  const scoreText = document.querySelector('.score');
+  scoreText.innerHTML = `Wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`;
 }
 

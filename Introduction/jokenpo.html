@@ -17,31 +17,46 @@
       <p class="title">
         Rock Paper Scissors
       </p>
-      <button class="rock-button" onclick="
-      choice('rock');
-      ">
-        <img src="imgs/rock-emoji.png">
-      </button>
-      <button class="paper-button" onclick="
-      choice('paper')
-      ">
-        <img src="imgs/paper-emoji.png">
-      </button>
-      <button class="scissors-button" onclick="
-      choice('scissors');
-      ">
-        <img src="imgs/scissors-emoji.png">
-      </button>
-      <p class="score">
-        
-      </p>
-      <button class="reset-button" onclick="
-      score.tie = 0;
-      score.win = 0;
-      score.lose = 0;
-      localStorage.removeItem('score');
-      ">
-        Reset Score
+      <section class="choices-box">
+        <button class="rock-button" onclick="
+        choice('rock');
+        ">
+          <img src="imgs/rock-emoji.png">
+        </button>
+        <button class="paper-button" onclick="
+        choice('paper');
+        ">
+          <img src="imgs/paper-emoji.png">
+        </button>
+        <button class="scissors-button" onclick="
+        choice('scissors');
+        ">
+          <img src="imgs/scissors-emoji.png">
+        </button>
+      </section>
+
+      <section class="results-box">
+        <p class="results-title">
+
+        </p>
+        <p class="results-content">
+          <span class="your-choice"></span> <span class="comp-choice"></span>
+        </p>
+      </section>
+
+      <section class="score-box">
+        <p class="score">
+          Wins: 0, Losses: 0, Ties: 0
+        </p>
+        <button class="reset-button" onclick="
+        score.tie = 0;
+        score.win = 0;
+        score.lose = 0;
+        localStorage.removeItem('score');
+        updateScore();
+        ">
+          Reset Score
+      </section>
       </button>
     </main>
   </body>
