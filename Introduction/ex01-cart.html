@@ -7,7 +7,7 @@
       Ex 1 - Cart Shop
     </title>
 
-    <script src="Script/ex1.js" async></script>
+    <script src="Script/ex01.js" async></script>
   </head>
 
   <body>
@@ -15,11 +15,6 @@
       <p class="title">
         Cart Quantity
       </p>
-      <button onclick="
-      console.log(`Cart Quantity: ${cartQuantity}`);
-      ">
-        Show Quantity
-      </button>
       <button onclick="
       cartFull(1);
       ">
@@ -51,11 +46,11 @@
         -3
       </button>
       <button onclick="
-      cartQuantity = 0; console.log(`Cart was Reset.\nCart Quantity: ${cartQuantity}`);
+      cartReset();
       ">
         Reset Cart
       </button>
-      
+      <p class="display-quantity"></p>
     </main>
   </body>
 </html>

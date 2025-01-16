@@ -37,11 +37,16 @@
           Orders over $40 = FREE shipping.
         </p>
         <div class="bar-button">
-          <input type="text" placeholder="Cost of Order">
-          <button>
+          <input class="order-bar" type="text" placeholder="Cost of Order" onkeydown="
+          enterFunction(event);
+          ">
+          <button onclick="
+          orderValue();
+          ">
             Calculate
           </button>
         </div>
+        <p class="js-result"></p>
       </section>
     </main>
   </body>

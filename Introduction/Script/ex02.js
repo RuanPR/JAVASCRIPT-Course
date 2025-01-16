@@ -9,7 +9,7 @@ function coinFlip() {
   return coin;
 } 
 
-const score = JSON.parse(localStorage.getItem('score')) || {
+let score = JSON.parse(localStorage.getItem('score')) || {
   wins: 0,
   losses: 0
 };
@@ -38,7 +38,9 @@ function playerChoice(playerMove) {
   }
 
   localStorage.setItem('score', JSON.stringify(score));
+  let playerChoice = document.querySelector('.player-choice');
+  playerChoice.innerHTML = `The result was ${coin}.
+${result}
+Wins: ${score.wins}, Losses: ${score.losses}`
 
-  alert(`The result was ${coin}. ${result}
-Wins: ${score.wins}, Losses: ${score.losses}`);
 }

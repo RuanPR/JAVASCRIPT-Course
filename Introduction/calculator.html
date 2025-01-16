@@ -15,7 +15,6 @@
   <body>
     <main>
       <div class="result">
-        134
       </div>
       <section class="numbers-box">
         <button class="number-button" onclick="
@@ -62,14 +61,14 @@
         ">.</button>
         <button class="equal-button" onclick="
         eval(calculation) = calculation;
-        console.log(calculation)
+        document.querySelector('.result').innerHTML = calculation;
         ">=</button>
         <button class="operator-button" onclick="
         updateCalculation(' / ');
         ">/</button>
         <button class="clear-button" onclick="
         calculation = ''; 
-        console.log(calculation)
+        document.querySelector('.result').innerHTML = calculation;
         ">Clear</button>
       </section>
     </main>
