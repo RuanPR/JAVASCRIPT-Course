@@ -5,11 +5,74 @@ body {
   margin: 0;
 }
 
+.yt-sub-button {
+  margin-left: 10px;
+}
+
+.subs-button {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+}
+
+.is-subs {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+  background-color: rgb(238, 238, 238);
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+}
+
+.subs-button:hover, .is-subs:hover {
+  cursor: pointer;
+}
+
 .amazon-shippment {
+  margin-top: 40px;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.bar-button {
-  display: flex;
+.amazon-shippment p {
+  margin-bottom: 3px;
 }
+
+.bar-section {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.js-result {
+  color: black;
+}
+
+.error-msg {
+  color: red;
+}
+
+.order-bar {
+  padding-left: 13px;
+  font-size: 14px;
+  height: 35px;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.calculate-button{
+  font-size: 14px;
+  margin-left: 5px;
+  color: white;
+  background-color: green;
+  padding: 12px 16px; 
+  border: none;
+}
+
